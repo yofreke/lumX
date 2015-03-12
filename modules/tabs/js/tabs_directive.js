@@ -186,7 +186,8 @@ angular.module('lumx.tabs', [])
                 indicator: '@',
                 noDivider: '@',
                 zDepth: '@',
-                layout: '@'
+                layout: '@',
+                iconPrefix: '@'
             },
             link: function(scope, element, attrs, ctrl)
             {
@@ -215,6 +216,11 @@ angular.module('lumx.tabs', [])
                 if (angular.isUndefined(scope.layout))
                 {
                     scope.layout = 'full';
+                }
+
+                if (angular.isUndefined(scope.iconPrefix))
+                {
+                    scope.iconPrefix = 'mdi mdi-';
                 }
             }
         };
