@@ -186,7 +186,8 @@ angular.module('lumx.tabs', [])
                 indicator: '@',
                 noDivider: '@',
                 zDepth: '@',
-                layout: '@'
+                layout: '@',
+                showIconAndHeading: '@'
             },
             link: function(scope, element, attrs, ctrl)
             {
