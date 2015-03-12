@@ -111,6 +111,11 @@ angular.module('lumx.dropdown', [])
 
         function setDropdownMenuCss()
         {
+            if ($scope.direction === 'none')
+            {
+                return;
+            }
+
             var dropdownMenuWidth = dropdownMenu.outerWidth();
             dropdownMenuHeight = dropdownMenu.outerHeight();
             var origin = {
