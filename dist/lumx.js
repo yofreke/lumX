@@ -870,7 +870,8 @@ angular.module('lumx.dropdown', [])
                 position: '@',
                 width: '@',
                 fromTop: '@',
-                overToggle: '@'
+                overToggle: '@',
+                direction: '@'
             },
             link: function(scope, element, attrs, ctrl)
             {
